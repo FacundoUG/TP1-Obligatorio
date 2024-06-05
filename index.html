@@ -3,127 +3,138 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+    <link rel="stylesheet" href="css/normalizer.css">
     <link rel="stylesheet" href="css/style.css">
     <title>Portfolio</title>
 </head>
 <body>
     
-    <header id="header">
-        <div class="nav">
-            <img src="img/Logo_portfolio.svg" width="70px" style="margin-top: 20px;" alt="Logo_portfolio">
-            <div class="navOption">
+    <header >
+        <div>
+            <img src="img/Logo_portfolio.svg" width="70px" alt="Logo_portfolio">
+            <div>
                 <a href="">Sobre mi</a>
                 <a href="">Porfolio</a>
                 <a href="">Contacto</a>
             </div>
-            <input class="inputSearch" placeholder="Buscar"/>
+            <div>
+                <input class="inputSearch" placeholder="Buscar"/>
+                <i class="bi bi-search"></i>
+            </div>
+            
         </div>
     </header>
     
     <main>
-        <section id="welcome" class="section sectionDif" style="box-shadow: 0 5px 5px #2b2d36;">
-            <div class="me">
-                <div class="title">
+        <section>
+            <div>
+                <div>
                     <h3>Soy</h3>
-                    <h2 style="color: #ffc96b;">Facundo Gasser</h2>
+                    <h2>Facundo Gasser</h2>
                 </div>
                 <h4>Backend developer & Estudiante de <br> Ingenieria en Sistemas</h4>
-                <button class="btn-contactMe">Contáctame!</button>
+                <button>Contáctame!</button>
             </div>
-            <div class="imgMe">
-                <img src="img/Foto_portfolio.png" height="700px" style="transform: scaleX(-1); margin-bottom: -3px; box-shadow: 0px 25px 20px -20px #2b2d36;"  alt="Foto_porfolio.png">
+            <div>
+                <img src="img/Foto_portfolio.png" height="700px" alt="Foto_porfolio.png">
                 <div>
                     <!-- Agregar linea vertical amarilla y iconos  -->
+                    <div />
+                    <i class="bi bi-linkedin"></i>
                 </div>
             </div>
         </section>
-        <section class="section" style="margin: 100px 100px;">
+        <section class="sectionDif">
             <div>
-                <h1 class="title">Sobre mi</h1>
-                <div style="margin: 30px 110px 0 50px;">
+                <h1>Sobre mi</h1>
+                <div>
                     <!-- Agregar linea horizontal amarrila -->
-                    <p style="font-size: 24px; text-align: justify;">Soy estudiante de ingenieria en sistemas de informacion, con 
+                    <div />
+                    <p>Soy estudiante de ingenieria en sistemas de informacion, con 
                         titulo tecnico en computación, mi educación se baso en conocimientos de HW and SW, 
                         aprendiendo lenguajes como C/C++, JAVA con springboot, SQL, PL/SQL.</p>
                 </div>
             </div>
         </section>
-        <section id="skills" class="section">
-            <div style="display: flex; flex-direction: column; align-items: center;">
-                <h1 class="title">Mis Habilidades</h1>
-                <div class="cards">
-                    <div class="one">
+        <section class="sectionDif">
+            <div>
+                <h1>Mis Habilidades</h1>
+                <div>
+                    <div>
                         <img src="img/Skills/java.svg">
                         <p>Java</p>
                     </div>
-                    <div class="two">
+                    <div>
                         <img src="img/Skills/spring.svg">
                         <p>Sringboot</p>
                     </div>
                     
-                    <div class="three">
+                    <div>
                         <img src="img/Skills/ubuntu.svg">
                         <p>Ubuntu</p>
                     </div>
                     
-                    <div class="four">
+                    <div>
                         <img src="img/Skills/c++.svg">
                         <p>C++</p>
                     </div>
                     
-                    <div class="five">    
+                    <div>    
                         <img src="img/Skills/c.svg">
                         <p>C</p>
                     </div>
-                    <div class="six">
+                    <div>
                         <img src="img/Skills/gitlab.svg">
                         <p>Gitlab</p>
                     </div>
                     
-                    <div class="seven">
+                    <div>
                         <img src="img/Skills/github.svg">
                         <p>Github</p>
                     </div>
 
-                    <div class="eight">
+                    <div>
                         <img src="img/Skills/postgresql.svg">
                         <p>PostgreSQL</p>
                     </div>
                 </div>
+                <img src="img/Portfolio/dot2.png">
             </div>
         </section>
-        <section id="portfolio" class="section">
-            <h1 class="title">Portfolio</h1>
-            <div class="cardsPort">
-                <div class="one">
+        <section class="sectionDif">
+            <h1>Portfolio</h1>
+            <div>
+                <div>
                     <img src="img/Portfolio/card1.jpg">
                 </div>
-                <div class="two">
+                <div>
                     <img src="img/Portfolio/card2.jpg">
                 </div>
-                <div class="three">
+                <div>
                     <img src="img/Portfolio/card3.jpg">
                 </div>
                 
-                <div class="five">
+                <div>
                     <img src="img/Portfolio/card4.jpg">
                 </div>
                 
-                <div class="six">    
+                <div>    
                     <img src="img/Portfolio/card5.jpg">
                 </div>
-                <div class="seven">
+                <div>
                     <img src="img/Portfolio/card6.jpg">
                 </div>
             </div>
             <button>Ver mas</button>
         </section>
-        <section id="exp" class="section sectionDif">
-            <h1 class="title">Experiencia</h1>
+        <section>
+            <h1>Experiencia</h1>
             <!-- Agregar la formas y la info -->
         </section>
-        <section id="test" class="section">
-            <h1 class="title" >Testimonial</h1>
+        <section class="sectionDif">
+            <img src="img/Portfolio/dot1.png" >
+            <h1>Testimonial</h1>
             <div>
                 <!-- Agregar linea horizontal amarrila -->
                 <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. 
@@ -132,14 +143,14 @@
                     ex qui pariatur!</p>
             </div>
         </section>
-        <section id="contact" class="section sectionDif">
-            <h1 class="title" >Contáctame!</h1>
+        <section>
+            <h1>Contáctame!</h1>
             <!-- Agregar 3 cuadros y los iconos abajo -->
         </section>
     </main>
     
-    <footer>
-        <h1 class="title">"Gracias por scrollear"</h1>
+    <footer class="sectionDif">
+        <h1>"Gracias por scrollear"</h1>
     </footer>
 
 </body>
