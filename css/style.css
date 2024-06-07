@@ -11,101 +11,17 @@ body{
 }
 
 #skills > div > img{
-    width: 80px;
+    width: 16vh;
 }
 
 #me{
-    display: flex;
-    flex-direction: row;
-    width: 100%;
-    justify-content: center;
-    align-items: center;
-    gap:30px;
-    padding: 10px 0;
-    margin-bottom: -20px;
+   
 }
 
 #intro{
     display: flex;
     flex-direction: row;
 }
-
-.introText{
-    display: flex;
-    flex-direction: column;
-    width: 300px;
-    position: absolute;
-    z-index: 1;
-    padding: 20px 0 0 10px;
-}
-
-.introTitle {
-    display: flex;
-    flex-direction: row;
-    align-items: center;
-    gap: 10px;
-    margin-bottom: -30px;
-}
-
-.introTitle > h2{
-    color: #ffc96b;
-}
-
-.introText > a{
-    width: 100px;
-    height: 30px;
-    display: flex;
-    text-decoration: none;
-    align-items: center;
-    justify-content: center;
-    background-color: #35363b;
-    border: solid 2px #ffc96b;
-    color: #ffc96b;
-}
-
-.introImg > img {
-    position: relative;
-    z-index: 0;
-    transform: scaleX(-1); 
-    width: 300px;
-    margin-left: 115px;
-    margin-bottom: -5px;
-    filter: grayscale(50%); 
-}
-
-.introImg > div{
-    position: absolute;
-    margin-top: -50px;
-    margin-left: 375px;
-    font-size: 30px;
-}
-
-.op{
-    display: flex;
-    flex-direction: row;
-    gap: 8px;
-    margin: 20px 0;
-}
-
-.op > a{
-    text-decoration: none;
-    color: #979799;
-}
-
-.op > a:hover{
-    text-decoration: none;
-    color: #FFFFFF;
-    transition: all ease 1s;
-}
-
-.inputSearch{
-    width: 80px;
-    background-color: #3d3e42;
-    border: none;
-    padding: 6px 10px;
-    border-radius: 5px;
-}
-
 
 /* telefonoHorizontal && tabletVertical */
 @media(min-width: 768px){
