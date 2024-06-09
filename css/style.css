@@ -10,6 +10,7 @@ body{
     background-color: #35363b;
 }
 
+<<<<<<< Updated upstream
 #skills > div > img{
     width: 16vh;
 }
@@ -26,15 +27,100 @@ body{
 /* telefonoHorizontal && tabletVertical */
 @media(min-width: 768px){
 
+=======
+#me{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
 }
 
-/* tabletHorizontal && escritorios normales */
-@media(min-width: 1024px){
-    
+.logo{
+    width: 17%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding-left: 3%;
 }
 
+.logo > img{
+    width: 8vh;
+    margin: 1vh 0;
+}
 
-/* escritorios grandes */
-@media(min-width: 1200px){
+.op {
+    width: 48%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 0 3%;
+    font-size: 2vh;
+    gap: 1vh;
+}
 
+.op > a{
+    text-decoration: none;
+    color: #a2a2a3;
+}
+
+.op > a:hover{
+    color: #FFFFFF;
+    transition: all ease 800ms;
+}
+
+.buscar{
+    width: 24%;
+    display: flex;
+    justify-content: end;
+    align-items: center;
+    padding-right: 3%;
+}
+
+.buscar > input{
+    width: 100%;
+    background-color: #3d3e42;
+    border-radius: 1vh;
+    border: none;
+    padding: 1vh;
+}
+
+#intro{
+    margin-top: -2vh;
+    width: 100%;
+>>>>>>> Stashed changes
+}
+
+.introText{
+    position: absolute;
+    z-index: 1;
+    display: flex;
+    flex-direction: column;
+    margin: 0.5vh 0;
+    display: flex;
+    height: 100%;
+    width: 100%;
+}
+
+.introTitle{
+    display: flex;
+    flex-direction: row;
+    margin-bottom: -5vh;
+    align-items: center;
+    gap: 1vh;
+}
+.introImg > img{
+    width: 30vh;
+    z-index: 0;
+    transform: scaleX(-1);
+    filter: grayscale(60%);
+}
+
+.introImg{
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: end;
+    position: relative;
+    background-color: aquamarine;
 }
