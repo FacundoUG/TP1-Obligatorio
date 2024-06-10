@@ -1,83 +1,130 @@
-*{
+* {
     color: #FFFFFF;
 }
 
-body{
+body {
     background-color: #31333b;
     width: 100%;
 }
 
-.sectionDif{
+.sectionDif {
     background-color: #35363b;
 }
 
-main > section{
+main > section {
     display: flex;
     flex-direction: column;
     width: 100%;
 }
 
-#me{
+#me {
     display: flex;
     flex-direction: row;
     justify-content: center;
     align-items: center;
-    height: 22vh;
+    height: 12vh;
     width: 100%;
 }
 
-.logo{
+.logo {
     display: flex;
     flex-direction: row;
     justify-content: center;
     align-items: center;
-    border:solid 2px saddlebrown;
     width: 0%;
     height: 100%;
     opacity: 0;
 }
 
-.logo > img{
+.logo > img {
     width: 5vh;
 }
 
-.op{
+.op {
     display: flex;
     flex-direction: row;
     justify-content: center;
     align-items: center;
-    border:solid 2px saddlebrown;
     width: 70%;
     height: 100%;
     gap: 2vh;
 }
 
-.buscar{
+.buscar {
     display: flex;
     flex-direction: row;
     justify-content: center;
     align-items: center;
     height: 100%;
     width: 30%;
-    border:solid 2px saddlebrown;
 }
 
-.buscar > input{
-    width: 15vh;
+.buscar > input {
+    width: 80%;
     background-color: #3d3e42;
     border-radius: 1vh;
     border: none;
     padding: 1vh 5vh 1vh 1vh; 
     box-sizing: border-box; 
+    font-size: 15px;
 }
 
-.buscar > i{
+.buscar > i {
     position: absolute;
     transform: translateY(-50%);
-    top: 11vh;
-    right: 2vh; 
+    top: 6.3vh;
+    right: 4%; 
     width: 3.5vh;
     height: auto;
 }
 
+#intro {
+    width: 100%;
+    height: 40vh;
+}
 
+.introText {
+    z-index: 1;
+    margin: -3vh 0 0 3vh;
+}
+
+.introTitle {
+    display: flex;
+    align-items: center;
+    gap: 3px;
+    margin-bottom: -7vh;
+}
+
+.introTitle > h2{
+    color: #ffc86b;
+}
+
+.introImg {
+    position: absolute;
+    display: flex;
+    flex-direction: column;
+    height: 40vh;
+    right: 0;
+    z-index: 0;
+}
+
+.vLine{
+    border: solid 1px #ffc86b;
+    height: 25vh;
+    width: 0vh;
+    margin: 0 0 1vh 1.3vh;
+}
+
+.introImg > img {
+    transform: scaleX(-1);
+    filter: grayscale(60%);
+}
+
+.introImg > div {
+    position: absolute;
+    display: flex;
+    flex-direction: column;
+    right: 0;
+    bottom: 0;
+    margin: 0 1vh 1vh 0;
+}
