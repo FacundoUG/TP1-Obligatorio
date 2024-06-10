@@ -5,16 +5,12 @@
 body {
     background-color: #31333b;
     width: 100%;
+    display: flex;
+    flex-direction: column;
 }
 
 .sectionDif {
     background-color: #35363b;
-}
-
-main > section {
-    display: flex;
-    flex-direction: column;
-    width: 100%;
 }
 
 #me {
@@ -22,41 +18,43 @@ main > section {
     flex-direction: row;
     justify-content: center;
     align-items: center;
-    height: 12vh;
-    width: 100%;
 }
 
 .logo {
-    display: flex;
-    flex-direction: row;
-    justify-content: center;
-    align-items: center;
-    width: 0%;
-    height: 100%;
+    width: 0;
     opacity: 0;
 }
 
-.logo > img {
-    width: 5vh;
-}
-
 .op {
+    width: 60%;
     display: flex;
     flex-direction: row;
     justify-content: center;
     align-items: center;
-    width: 70%;
-    height: 100%;
-    gap: 2vh;
+    gap: 6px;
+    margin: 0 0 0 2vh;
+    font-size: 3vh;
+}
+
+.op > a {
+    text-decoration: none;
 }
 
 .buscar {
+    width: 40%;
     display: flex;
     flex-direction: row;
-    justify-content: center;
+    justify-content: end;
     align-items: center;
-    height: 100%;
-    width: 30%;
+    gap: 6px;
+    right: 0;
+    margin: 0 1vh 0 0;
+}
+
+.buscar > i {
+    position: absolute;
+    right: 0;
+    margin: 0.3vh 2.5vh 0 0;
 }
 
 .buscar > input {
@@ -66,65 +64,115 @@ main > section {
     border: none;
     padding: 1vh 5vh 1vh 1vh; 
     box-sizing: border-box; 
-    font-size: 15px;
 }
 
-.buscar > i {
-    position: absolute;
-    transform: translateY(-50%);
-    top: 6.3vh;
-    right: 4%; 
-    width: 3.5vh;
-    height: auto;
+
+@media screen and (min-width: 530px) and (max-width:767px) {
+    .logo {
+        width: 20%;
+        opacity: 1;
+        padding: 1vh;
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .logo > img {
+        width: 10vh;
+    }
+
+    .op {
+        width: 80%;
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        align-items: center;
+        gap: 5vh;
+        margin: 0 0 0 2vh;
+        font-size: 4vh;
+    }
+    
+    .buscar {
+        width: 20%;
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        gap: 6px;
+        margin: 0 1vh 0 0;
+    }
+
+    .buscar > input {
+        width: 100%;
+        height: 8vh;
+        font-size: 4vh;
+        background-color: #3d3e42;
+        border-radius: 1vh;
+        border: none;
+        padding: 1vh 5vh 1vh 1vh; 
+        box-sizing: border-box; 
+    }
+
+    .buscar > i {
+        font-size: 2.8vh;
+    }
 }
 
-#intro {
-    width: 100%;
-    height: 40vh;
+
+@media screen and (min-width: 768px) and (max-width:1023px) {
+    .logo {
+        width: 20%;
+        opacity: 1;
+        padding: 1vh;
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .op {
+        width: 80%;
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        align-items: center;
+        gap: 5vh;
+        margin: 0 0 0 2vh;
+        font-size: 4vh;
+    }
+
+    .buscar {
+        width: 20%;
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        gap: 6px;
+        margin: 0 1vh 0 0;
+    }
+
+    .buscar > input {
+        width: 100%;
+        height: 8vh;
+        font-size: 4vh;
+        background-color: #3d3e42;
+        border-radius: 1vh;
+        border: none;
+        padding: 1vh 5vh 1vh 1vh; 
+        box-sizing: border-box; 
+    }
+
+    .buscar > i {
+        font-size: 2.8vh;
+    }
 }
 
-.introText {
-    z-index: 1;
-    margin: -3vh 0 0 3vh;
+@media screen and (min-width: 1024px) and (max-width: 1439px){
+
 }
 
-.introTitle {
-    display: flex;
-    align-items: center;
-    gap: 3px;
-    margin-bottom: -7vh;
+@media screen and (min-width: 1440px) {
+    
 }
 
-.introTitle > h2{
-    color: #ffc86b;
-}
 
-.introImg {
-    position: absolute;
-    display: flex;
-    flex-direction: column;
-    height: 40vh;
-    right: 0;
-    z-index: 0;
-}
 
-.vLine{
-    border: solid 1px #ffc86b;
-    height: 25vh;
-    width: 0vh;
-    margin: 0 0 1vh 1.3vh;
-}
-
-.introImg > img {
-    transform: scaleX(-1);
-    filter: grayscale(60%);
-}
-
-.introImg > div {
-    position: absolute;
-    display: flex;
-    flex-direction: column;
-    right: 0;
-    bottom: 0;
-    margin: 0 1vh 1vh 0;
-}
