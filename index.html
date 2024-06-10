@@ -15,13 +15,13 @@
             <img src="img/Logo_portfolio.svg" alt="Logo_portfolio">
         </div>
         <div class="op">
-            <a href="">Sobre mi</a>
-            <a href="">Porfolio</a>
-            <a href="">Contacto</a>
+            <a href="#aboutMe">Sobre mi</a>
+            <a href="#port">Porfolio</a>
+            <a href="#contact">Contacto</a>
         </div>
         <div class="buscar">
             <input class="inputSearch" placeholder="Buscar"/>
-            <!-- <i class="bi bi-search"></i> -->
+            <i class="bi bi-search"></i>
         </div>
     </header>
     
@@ -37,89 +37,142 @@
             </div>
             <div class="introImg">
                 <img src="img/Foto_portfolio.png" alt="Foto_porfolio.png">
-                <div>
-                    <div class="vLine" />
+                <div class="vLine"></div> 
+                <a href="https://www.linkedin.com/in/gasser-facundo/">
                     <i class="bi bi-linkedin"></i>
-                </div>
-            </div>
+                </a>
+            </divZ>
         </section>
-        <section>
+        <section id="aboutMe">
             <h1>Sobre mi</h1>
-            <div>
-                <div class="hLine"/>
+            <div class="abMText">
+                <div class="hLine"></div>
                 <p>Soy estudiante de ingenieria en sistemas de informacion, con 
-                    titulo tecnico en computación, mi educación se baso en conocimientos de HW and SW, 
-                    aprendiendo lenguajes como C/C++, JAVA con springboot, SQL, PL/SQL.</p>
+                    titulo tecnico en computación, mi educación se baso en conocimientos de <span class="imp">HW</span> and <span class="imp">SW</span>, 
+                    aprendiendo lenguajes como <span class="imp">C/C++</span>, <span class="imp">JAVA</span> con <span class="imp">springboot</span>, 
+                    <span class="imp">SQL</span>, <span class="imp">PL/SQL</span>.</p>
             </div>    
         </section>
-        <section>
+        <section id="habs">
             <div>
                 <h1>Mis Habilidades</h1>
-                <div id="skills">
-                    <div>
-                        <img src="img/Skills/java.svg">
-                        <p>Java</p>
-                    </div>
-                    <div>
-                        <img src="img/Skills/spring.svg">
-                        <p>Sringboot</p>
+                <div id="skills" class="grid">
+                    <div class="one gridImage">
+                        <a href="https://dev.java">
+                            <img src="img/Skills/java.svg">
+                            <p>Java</p>
+                        </a>
                     </div>
                     
-                    <div>
-                        <img src="img/Skills/ubuntu.svg">
-                        <p>Ubuntu</p>
+                    <div class="two gridImage">
+                        <a href="https://docs.spring.io/spring-boot/index.html">
+                            <img src="img/Skills/spring.svg">
+                            <p>Springboot</p>
+                        </a>
                     </div>
                     
-                    <div>
-                        <img src="img/Skills/c++.svg">
-                        <p>C++</p>
+                    <div class="three gridImage">
+                        <a href="https://help.ubuntu.com">
+                            <img src="img/Skills/ubuntu.svg">
+                            <p>Ubuntu</p>
+                        </a>
                     </div>
                     
-                    <div>    
-                        <img src="img/Skills/c.svg">
-                        <p>C</p>
-                    </div>
-                    <div>
-                        <img src="img/Skills/gitlab.svg">
-                        <p>Gitlab</p>
+                    <div class="gridImage">
+                        <a href="https://devdocs.io/cpp/">
+                            <img src="img/Skills/c++.svg">
+                            <p>C++</p>
+                        </a>
                     </div>
                     
-                    <div>
-                        <img src="img/Skills/github.svg">
-                        <p>Github</p>
+                    <div class="gridImage">    
+                        <a href="https://devdocs.io/c/">
+                            <img src="img/Skills/c.svg">
+                            <p>C</p>
+                        </a>
+                    </div>
+                    <div class="gridImage">
+                        <a href="https://docs.gitlab.com/ee/">
+                            <img src="img/Skills/gitlab.svg">
+                            <p>Gitlab</p>
+                        </a>
+                    </div>
+                    
+                    <div class="gridImage">
+                        <a href="https://docs.github.com/es">
+                            <img src="img/Skills/github.svg">
+                            <p>Github</p>
+                        </a>
                     </div>
 
-                    <div>
-                        <img src="img/Skills/postgresql.svg">
-                        <p>PostgreSQL</p>
+                    <div class="gridImage">
+                        <a href="https://www.postgresql.org/docs/">
+                            <img src="img/Skills/postgresql.svg">
+                            <p>PostgreSQL</p>
+                        </a>
                     </div>
                 </div>
-                <img src="img/Portfolio/dot2.png">
+                <img class="dot1" src="/img/Portfolio/Dot1.png">
             </div>
         </section>
-        <section>
+        <section id="port">
             <h1>Portfolio</h1>
-            <div>
-                
+            <div class="portItem">
+                <img class="imgPort" src="/img/Portfolio/proj1.png">
+                <div class="redirect1">
+                    <h3>React Site</h3>
+                    <p>Un sitio plano con informacion de react</p>
+                    <a href="https://github.com/FacundoUG/React_site" class="btnPort">See more</a>
+                </div>
             </div>
-            <button>Ver mas</button>
+            <div class="portItem">
+                <img class="imgPort" src="/img/Portfolio/proj2.png">
+                <div class="redirect2">
+                    <h3>AirBnB Clone</h3>
+                    <p>Una copia del diseño de airBnB</p>
+                    <a href="https://github.com/FacundoUG/airbnb_clone" class="btnPort">See more</a>
+                </div>
+            </div> 
+            <div class="portItem">
+                <img class="imgPort" src="/img/Portfolio/proj3.png">
+                <div class="redirect3">
+                    <h3>Meme Generator</h3>
+                    <p>Un sitio generador de meme</p>
+                    <a href="https://github.com/FacundoUG/Meme_Generator" class="btnPort">See more</a>
+                </div>
+            </div>
+            <a class="btnMore btnPort">Ver mas</a>
         </section>
-        <section class="sectionDiff">
+        <section id="exp" class="sectionDif">
             <h1>Experiencia</h1>
-            <!-- Agregar la formas y la info -->
-        </section>
-        <section>
-            <img src="img/Portfolio/dot1.png" >
-            <h1>Testimonial</h1>
-            <div>
-                <div class="hLine"/>
-                <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. 
-                    Sequi ad aspernatur voluptates itaque, quo minus quos. 
-                    Ipsa quis quas quibusdam ipsam, eaque et, commodi laudantium quo quia 
-                    ex qui pariatur!</p>
+            <div class="expItem">
+                <p>2022</p>
+                <span class="dot"></span>
+                <span class="expVLine"></span>
+                <div>
+                    <h3>Desarrollador BE JR</h3>
+                    <h5>Tecno Accion S.A, Buenos Aires</h5>
+                    <p>Desempeñandome como desarrollador backend, con tecnologia como java, c/c++, microservicios, Pro *C, etc. </p>
+                </div>
             </div>
         </section>
-        <section class="sectionDif">
+        <section id="test">
+            <h1>Testimoniales</h1>
+            <div class="testItem">
+                <div class="testHline hLine"></div>
+                <div>
+                    <p>
+                        Lorem ipsum, dolor sit amet consectetur adipisicing elit. Aperiam totam dolore 
+                        architecto minus nulla sit doloribus sed nostrum, sint explicabo quia magnam pariatur 
+                        incidunt ut beatae aliquid optio placeat odio.
+                    </p>
+                    <p style="font-weight: bold;">
+                        Ricardo Mendez
+                    </p>
+                </div>
+            </div>
+        </section>
+        <section id="contact" class="sectionDif">
             <h1>Contáctame!</h1>
             <!-- Agregar 3 cuadros y los iconos abajo -->
         </section>
