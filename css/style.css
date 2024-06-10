@@ -33,7 +33,7 @@ body {
     align-items: center;
     gap: 6px;
     margin: 0 0 0 2vh;
-    font-size: 3vh;
+    font-size: 18px;
 }
 
 .op > a {
@@ -64,58 +64,6 @@ body {
     border: none;
     padding: 1vh 5vh 1vh 1vh; 
     box-sizing: border-box; 
-}
-
-
-@media screen and (min-width: 530px) and (max-width:767px) {
-    .logo {
-        width: 20%;
-        opacity: 1;
-        padding: 1vh;
-        display: flex;
-        flex-direction: row;
-        justify-content: center;
-        align-items: center;
-    }
-
-    .logo > img {
-        width: 10vh;
-    }
-
-    .op {
-        width: 80%;
-        display: flex;
-        flex-direction: row;
-        justify-content: center;
-        align-items: center;
-        gap: 5vh;
-        margin: 0 0 0 2vh;
-        font-size: 4vh;
-    }
-    
-    .buscar {
-        width: 20%;
-        display: flex;
-        flex-direction: row;
-        align-items: center;
-        gap: 6px;
-        margin: 0 1vh 0 0;
-    }
-
-    .buscar > input {
-        width: 100%;
-        height: 8vh;
-        font-size: 4vh;
-        background-color: #3d3e42;
-        border-radius: 1vh;
-        border: none;
-        padding: 1vh 5vh 1vh 1vh; 
-        box-sizing: border-box; 
-    }
-
-    .buscar > i {
-        font-size: 2.8vh;
-    }
 }
 
 
