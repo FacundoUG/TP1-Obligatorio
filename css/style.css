@@ -355,7 +355,7 @@ body {
     border: solid 7px #ffc86b;
     height: 0vh;
     width: 0vh;
-    margin: 3vh 1vh 0 1vh;
+    margin: 0 1vh 0 1vh;
     border-radius: 100%;
     filter: drop-shadow(0 0 0.75rem #ffc86b);
 }
@@ -397,7 +397,8 @@ body {
     flex-direction: column;
     justify-content: center;
     text-align: center;
-    margin-top: -4vh;
+    margin-top: -0.5vh;
+    height: 15vh;
 }
 
 .expText{
@@ -681,10 +682,6 @@ body {
         margin-top: -1.4vh;
     }
 
-    .sep{
-        margin-top: -3vh;
-    }
-
     .expItem > p{
         width: 4vh;
         height: 3.3vh;
@@ -700,6 +697,94 @@ body {
 
     .expText > p {
         font-size: 2vh;
+    }
+
+    .hlineSubject1 > div{
+        margin: 2.6vh 1vh 0 0;
+    }
+
+    .hlineSubject1 > p {
+        margin-right: 4vh;
+        font-size: 18px;
+    }
+
+    .testItem{
+        display: flex;
+        flex-direction: row;
+        width: 100%;
+        position: relative;
+    }
+
+    .testHline {
+        width: 60%;
+    }
+
+    .testImg > img {
+        opacity: 1;
+        width: 25vh;
+    }
+
+    .testImg{
+        width: 33%;
+        display: flex;
+        justify-content: end;
+        text-align: center;
+        align-items: center;
+        position: absolute;
+        right: 0;
+        bottom: 0;
+        z-index: 0;
+    }
+
+    .bgImg{
+        background-color: #ffc86b;
+        width: 24vh;
+        height: 24vh;
+        position: absolute;
+        z-index: -1;
+        bottom: 0;
+        border-radius: 3vh 0 0 3vh;
+    }
+
+    .hlineSubject2{
+        font-size: 18px;
+    }
+
+    .hlineSubject2 > div{
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+    }
+    
+    .hLineTest{
+        border: solid 1px #ffc86b;
+        width: 12vh;
+        height: 0vh;
+        margin: 0 1vh 0 0;
+    }
+
+    #contact{
+        height: 18vh;
+    }
+
+    .hline1{
+        width: 30%;
+    }
+
+    .hline2{
+        width: 30%;
+    }
+
+    .hline3{
+        width: 45%;
+    }
+
+    .hline4{
+        width: 45%;
+    }
+
+    .contactFoot{
+        font-size: 2.5vh;
     }
 }
 
