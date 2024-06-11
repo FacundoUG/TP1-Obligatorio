@@ -70,6 +70,7 @@ body {
     position: relative;
     height: 25vh;
     margin: -1vh 0 0 0;
+    box-shadow: 0px 9px 12px -10px rgb(29, 31, 36);
 }
 
 .introText {
@@ -77,6 +78,14 @@ body {
     margin: 0 0 0 3vh;
     position: relative;
     z-index: 1;
+}
+
+.introText > a {
+    border: solid 2px #ffc86b;
+    color: #ffc86b;
+    padding: 0.6vh;
+    text-decoration: none;
+    border-radius: 0.5vh;
 }
 
 .introTitle {
@@ -126,6 +135,28 @@ body {
     flex-direction: column;
     justify-content: center;
     align-items: center;
+}
+
+#aboutMe{
+    padding: 3vh 5vh 0 5vh;
+}
+
+.hLine{
+    border: solid 1px #ffc86b;
+    width: 30vh;
+    height: 0vh;
+    margin: 2.5vh 1vh 0 0;
+}
+
+.abMText{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: start;
+}
+
+.imp{
+    color: #ffc86b;
 }
 
 @media screen and (min-width: 768px) and (max-width:1023px) {
