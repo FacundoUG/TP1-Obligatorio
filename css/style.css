@@ -66,6 +66,67 @@ body {
     box-sizing: border-box; 
 }
 
+#intro {
+    position: relative;
+    height: 25vh;
+    margin: -1vh 0 0 0;
+}
+
+.introText {
+    height: 100%;
+    margin: 0 0 0 3vh;
+    position: relative;
+    z-index: 1;
+}
+
+.introTitle {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 1vh;
+    margin: 1vh 0 -3vh 0;
+}
+
+.introTitle > h2 {
+    color: #ffc86b;
+}
+
+.introImg {
+    position:absolute;
+    bottom: 0;
+    right: 0;
+}
+
+.introImg > img {
+    position:absolute;
+    width: 22vh;
+    bottom: 0;
+    right: 0;
+    z-index: 0;
+    transform: scaleX(-1);
+    filter: grayscale(50%);
+}
+
+.introImg > div {
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    margin: 0 0.5vh 0.5vh 0;
+}
+
+.vLine{
+    border: solid 1px #ffc86b;
+    height: 8vh;
+    width: 0vh;
+    margin: 0 0 1vh 0;
+}
+
+.introVline {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
 
 @media screen and (min-width: 768px) and (max-width:1023px) {
     .logo {
