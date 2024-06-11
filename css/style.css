@@ -397,7 +397,7 @@ body {
     flex-direction: column;
     justify-content: center;
     text-align: center;
-    margin-top: -3vh;
+    margin-top: -4vh;
 }
 
 .expText{
@@ -646,7 +646,10 @@ body {
 
     #port > h1,
     #aboutMe > h1,
-    #habs > div > h1{
+    #habs > div > h1,
+    #exp > h1,
+    #test > h1,
+    #contact > div > h1{
         font-size: 4vh;
     }
 
@@ -675,16 +678,28 @@ body {
     }
 
     .expText{
-        margin-top: -0.5vh;
+        margin-top: -1.4vh;
     }
 
     .sep{
-        margin-top: -1.4vh;
+        margin-top: -3vh;
     }
 
     .expItem > p{
         width: 4vh;
         height: 3.3vh;
+    }
+
+    .expText > h3{
+        font-size: 2.3vh;
+    }
+
+    .expText > h5 {
+        font-size: 1.5vh;
+    }
+
+    .expText > p {
+        font-size: 2vh;
     }
 }
 
