@@ -426,6 +426,51 @@ body {
     text-align: justify;
 }
 
+.dot2{
+    width: 30vh;
+    margin: 3vh 0 -6vh 0;
+}
+
+#test > div{
+    display: flex;
+    flex-direction: row;
+    padding: 0 2vh;
+    gap: 2vh;
+}
+
+#test > div, 
+#test > h1{
+    margin: 0 3vh 0 3vh;
+}
+
+#test > h1{
+    margin: 5vh 0 0 1.2vh; 
+}
+
+.testHline{
+    margin-top: 4.5vh;
+}
+
+.testItem > div > p{
+    text-align: justify;
+}
+
+.hlineSubject{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    margin-top: -5vh;
+}
+
+.hlineSubject > div{
+    width: 3vh;
+    margin: 0 1vh 0 0;
+}
+
+.hlineSubject > p{
+    font-size: 15px;
+    color: #aaabad;
+}
 
 
 @media screen and (min-width: 768px) and (max-width:1023px) {
