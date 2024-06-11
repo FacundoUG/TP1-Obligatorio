@@ -93,7 +93,7 @@ body {
     flex-direction: row;
     align-items: center;
     gap: 1vh;
-    margin: 1vh 0 -3vh 0;
+    margin: 0 0 -3vh 0;
 }
 
 .introTitle > h2 {
@@ -171,38 +171,26 @@ body {
     text-align: center;
 }
 
-.gridImage > a > img{
-    width: 9vh;
-}
-
 #skills{
     display: grid;
     gap: 3vh;
 }
 
-#skills > div > a{
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    text-decoration: none;
-}
-
-#skills > div{
+.gridImage {
+    width: 16vh;
     background-color: #3d3e42;
+    display: flex;
     width: 16vh;
     height: 20vh;
     justify-content: center;
+    align-items: center;
+    text-align: center;
     border-radius: 2vh;
 }
 
-#skills > div:hover{
+.gridImage:hover{
     background-color: #ffc86b;
     transition: all ease 800ms;
-}
-
-
-.gridImage {
-    width: 16vh;
 }
 
 .gridImage > a{
@@ -210,27 +198,24 @@ body {
     flex-direction: column;
     text-align: center;
     justify-content: center;
-    margin-top: 1.5vh;
+    align-items: center;
     font-size: 12px;
+    text-decoration: none;
 }
 
 .gridImage > a > img{
     width: 9vh;
-    margin-top: 2vh;
+    height: 10vh;
+}
+
+.gridImage > a > p{
+    font-size: 2vh;
+    height: 20px;
 }
 
 .one{
     grid-column: 1/2;
     grid-row: 1;
-}
-
-.one > a > img{
-    width: 8vh;
-    margin-top: 1vh;
-}
-
-.one > a > p{
-    margin-top: 7px;
 }
 
 .two{
@@ -422,7 +407,7 @@ body {
 .expText > p{
     margin-top: -6px;
     font-size: 15px;
-    padding-right: 6vh;
+    padding-right: 12vh;
     text-align: justify;
 }
 
@@ -584,49 +569,111 @@ body {
 
 @media screen and (min-width: 768px) and (max-width:1023px) {
     .logo {
-        width: 20%;
+        width: 10%;
         opacity: 1;
         padding: 1vh;
-        display: flex;
-        flex-direction: row;
-        justify-content: center;
-        align-items: center;
+    }
+
+    .logo > img {
+        width: 8vh;
     }
 
     .op {
-        width: 80%;
-        display: flex;
-        flex-direction: row;
-        justify-content: center;
-        align-items: center;
-        gap: 5vh;
-        margin: 0 0 0 2vh;
-        font-size: 4vh;
+        width: 65%;
+        gap: 1vh;
+        margin: 0 auto;
+        font-size: 3vh;
     }
 
     .buscar {
-        width: 20%;
-        display: flex;
-        flex-direction: row;
-        align-items: center;
+        width: 25%;
         gap: 6px;
-        margin: 0 1vh 0 0;
+        margin: 0 2vh 0 0;
     }
 
     .buscar > input {
         width: 100%;
-        height: 8vh;
-        font-size: 4vh;
-        background-color: #3d3e42;
-        border-radius: 1vh;
-        border: none;
-        padding: 1vh 5vh 1vh 1vh; 
-        box-sizing: border-box; 
+        height: 5vh;
+        font-size: 3vh;
     }
 
     .buscar > i {
         font-size: 2.8vh;
     }
+
+    #intro{
+        font-size: 22px;
+        padding-left: 3vh;
+    }
+
+    .introImg > div{
+        margin: 0 1.4vh 1vh 0;
+    }
+
+    .vLine{
+        height: 10vh;
+    }
+
+    .abMText > p{
+        font-size: 25px;
+        margin: 0vh 0 0 0;
+    }
+
+    .hLine{
+        margin: 1vh 1vh 0 0;
+    }
+
+    .one{
+        grid-column: 1/3;
+        grid-row: 1;
+    }
+
+    .two{
+        grid-column: 2/3;
+        grid-row: 1;
+    }
+    
+    .three{
+        grid-column: 3/3;
+        grid-row: 1;
+    }
+
+    .dot1{
+        width: 26vh;
+        height: 36vh;
+        margin: -29vh 0 0 0;
+    }
+
+    #port > h1,
+    #aboutMe > h1,
+    #habs > div > h1{
+        font-size: 4vh;
+    }
+
+    .imgPort{
+        width: 60vh;
+        margin-bottom: 1vh;
+    }
+
+    .btnPort{
+        height: 5vh;
+        width: 15vh;
+        font-size: 25px;
+    }
+
+    .redirect1 h3,
+    .redirect2 h3,
+    .redirect3 h3 {
+        font-size: 3vh;
+        margin-bottom: -2.5vh;
+    }
+
+    .redirect1 p,
+    .redirect2 p,
+    .redirect3 p {
+        font-size: 3vh;
+    }
+
 }
 
 @media screen and (min-width: 1024px) and (max-width: 1439px){
