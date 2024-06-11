@@ -427,49 +427,95 @@ body {
 }
 
 .dot2{
-    width: 30vh;
-    margin: 3vh 0 -6vh 0;
+    width: 12vh;
+    margin: 1.6vh 0 -2vh -1.2vh;
 }
 
-#test > div{
+#test{
+    height: 42vh;
+}
+
+#test > h1 {
+    margin: 2vh 0 0 5vh;
+}
+
+.testItem {
     display: flex;
     flex-direction: row;
-    padding: 0 2vh;
-    gap: 2vh;
-}
-
-#test > div, 
-#test > h1{
-    margin: 0 3vh 0 3vh;
-}
-
-#test > h1{
-    margin: 5vh 0 0 1.2vh; 
 }
 
 .testHline{
-    margin-top: 4.5vh;
-}
-
-.testItem > div > p{
+    margin: 2vh 5vh 0 5vh;
     text-align: justify;
 }
 
-.hlineSubject{
+.hlineSubject1 {
     display: flex;
     flex-direction: row;
+}
+
+.hlineSubject2{
+    margin: 0 0 0 4vh;
+}
+
+.hlineSubject2 > div {
+    display: flex;
+    flex-direction: row;
+    margin: -3vh 0 0 0;
+}
+
+.hlineSubject2 > div > div{
+    width: 2vh;
+}
+
+.hlineSubject2 > div > p{
+    color: #8d8e90;
+}
+
+.testImg > img{
+    opacity: 0;
+    width: 0px;
+}
+
+#contact{
+    height: 30vh;
+    display: flex;
+    flex-direction: column;
     align-items: center;
-    margin-top: -5vh;
+    margin-top: 2vh;
+    box-shadow: 0px -15px 20px -20px rgb(29, 31, 36), 0px 15px 20px -20px rgb(29, 31, 36), 25px 0 20px -20px rgb(29, 31, 36);
 }
 
-.hlineSubject > div{
-    width: 3vh;
-    margin: 0 1vh 0 0;
+#contact > h1{
+    position: absolute;
+    margin-top: -3.5vh;
 }
 
-.hlineSubject > p{
-    font-size: 15px;
-    color: #aaabad;
+.compContact{
+    display: flex;
+    flex-direction: row;
+}
+
+.compContact > h1{
+    position: relative;
+    margin-top: -3.5vh;
+    width: 60%;
+}
+
+.hline1{
+    position: absolute;
+    border: solid 1px #ffc86b;
+    width: 20%;
+    height: 0vh;
+    left: 0;
+}
+
+.hline2{
+    position: absolute;
+    border: solid 1px #ffc86b;
+    width: 20%;
+    height: 0vh;
+    right: 0;
 }
 
 
