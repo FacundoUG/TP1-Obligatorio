@@ -334,7 +334,7 @@ body {
 #exp {
     display: flex;
     flex-direction: column;
-    height: 22vh;
+    height: 30%;
     margin: 5vh 0 0 0;
     box-shadow: 0px -25px 20px -20px rgb(29, 31, 36), 0px 25px 20px -20px rgb(29, 31, 36), 25px 0 20px -20px rgb(29, 31, 36);
 }
@@ -445,10 +445,8 @@ body {
     margin: 0 0 0 4vh;
 }
 
-.hlineSubject2 > div {
-    display: flex;
-    flex-direction: row;
-    margin: -3vh 0 0 0;
+.hlineSubject2 > div{
+    margin-top: -2vh;
 }
 
 .hlineSubject2 > div > div{
@@ -459,6 +457,23 @@ body {
     color: #8d8e90;
 }
 
+.hlineSubject2{
+    font-size: 15px;
+}
+
+.hlineSubject2 > div{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+
+.hLineTest{
+    border: solid 1px #ffc86b;
+    width: 12vh;
+    height: 0vh;
+    margin: 0 1vh 0 0;  
+}
+
 .testImg > img{
     opacity: 0;
     width: 0px;
@@ -466,7 +481,7 @@ body {
 
 #contact{
     position: relative;
-    height: 9rem;
+    height: 10rem;
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -604,7 +619,7 @@ body {
 
     #intro{
         font-size: 22px;
-        padding-left: 3vh;
+        padding: 2vh 0 0 3vh;
     }
 
     .introImg > div{
@@ -764,7 +779,7 @@ body {
     }
 
     #contact{
-        height: 18vh;
+        height: 13rem;
     }
 
     .hline1{
@@ -786,10 +801,232 @@ body {
     .contactFoot{
         font-size: 2.5vh;
     }
+
+    .icons > div{
+        width: 30vh;
+        font-size: 2vh;
+    }
+
 }
 
 @media screen and (min-width: 1024px) and (max-width: 1439px){
+    .logo {
+        width: 10%;
+        opacity: 1;
+        padding: 1vh;
+    }
 
+    .logo > img {
+        width: 6vh;
+    }
+
+    .op {
+        width: 64%;
+        gap: 1vh;
+        margin: 0 auto;
+        font-size: 2.5vh;
+    }
+
+    .buscar {
+        width: 16%;
+        gap: 6px;
+        margin: 0 2vh 0 0;
+    }
+
+    .buscar > input {
+        width: 100%;
+        height: 4vh;
+        font-size: 2vh;
+    }
+
+    .buscar > i {
+        font-size: 2vh;
+    }
+
+    #intro {
+        font-size: 22px;
+        padding: 12vh 0 0 3vh;
+    }
+
+    .introImg > div {
+        margin: 0 1.4vh 1vh 0;
+    }
+
+    .introImg > img {
+        width: 30vh;
+    }
+
+    .vLine {
+        height: 10vh;
+        border: solid 2px #ffc86b;
+        border-radius: 2vh;
+    }
+
+    .introVline > a{
+        font-size: 2.2vh;
+    }
+
+    .introText{
+        font-size: 2.5vh;
+        margin-top: -10vh;
+    }
+
+    .introTitle {
+        margin-bottom: -4vh;
+    }
+
+    #port > h1,
+    #aboutMe > h1,
+    #habs > div > h1,
+    #exp > h1,
+    #test > h1,
+    #contact > div > h1{
+        font-size: 4vh;
+    }
+
+    .abMText > p{
+        font-size: 25px;
+        margin: 0vh 0 0 0;
+    }
+
+    .hLine{
+        margin: 0.8vh 1vh 0 0;
+    }
+
+    .one{
+        grid-column: 1/4;
+        grid-row: 1;
+    }
+
+    .two{
+        grid-column: 2/4;
+        grid-row: 1;
+    }
+    
+    .three{
+        grid-column: 3/4;
+        grid-row: 1;
+    }
+
+    .four{
+        grid-column: 4/4;
+        grid-row: 1;
+    }
+
+    .portItem{
+        margin-bottom: 0;
+    }
+
+    #skills{
+        gap: 2vh;
+    }
+
+    .dot1{
+        width: 20vh;
+        height: 20vh;
+        margin: -10vh 0 0 0;
+        right: 0;
+    }
+
+    .imgPort{
+        width: 33vh;
+    }
+
+    .portItems{
+        display: grid;
+        gap: 2vh;
+        margin-bottom: 3vh;
+    }
+
+    .portOne{
+        grid-column: 1/2;
+        grid-row: 1;
+    }
+    .portTwo{
+        grid-column: 2/2;
+        grid-row: 1;
+    }
+
+    .portThree{
+        grid-column: 1/2;
+        grid-row: 2;
+    }
+
+    .btnPort{
+        height: 5vh;
+        width: 15vh;
+        font-size: 30px;
+    }
+
+    .redirect1 h3,
+    .redirect2 h3,
+    .redirect3 h3 {
+        font-size: 2.5vh;
+        margin-bottom: -1.4vh;
+    }
+
+    .redirect1 p,
+    .redirect2 p,
+    .redirect3 p {
+        font-size: 2vh;
+    }
+
+    #exp{
+        height: 18rem;
+    }
+
+    .expText{
+        margin-top: -1.4vh;
+    }
+
+    .expItem > p{
+        width: 4vh;
+        height: 3.3vh;
+    }
+
+    .expText > h3{
+        font-size: 2.3vh;
+    }
+
+    .expText > h5 {
+        font-size: 1.5vh;
+    }
+
+    .expText > p {
+        font-size: 2vh;
+    }
+
+    #exp > h1{
+        margin: -35px 0 0 2vh;
+    }
+
+    .expItem > p{
+        width: 8vh;
+        height: 4vh;
+        font-size: 2.4vh;
+    }
+
+    .sep{
+        margin: -1vh 0 0 0;
+    }
+
+    .dot{
+        border: solid 15px #ffc86b;
+        margin: 1vh 1vh 0 1vh;
+    }
+
+    .expVLine{
+        border: solid 2px #FFFFFF;
+        width: 0;
+        height: 8vh;
+        border-radius: 2vh;
+        margin: 0.8vh 0 0 1.9vh;
+    }
+    
+    .expText > p{
+        margin-top: -1.5vh;
+        font-size: 2vh;
+    }
 }
 
 @media screen and (min-width: 1440px) {
