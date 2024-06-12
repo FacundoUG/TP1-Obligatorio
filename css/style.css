@@ -31,7 +31,7 @@ body {
     flex-direction: row;
     justify-content: center;
     align-items: center;
-    gap: 6px;
+    gap: 2vh;
     margin: 0 0 0 2vh;
     font-size: 18px;
 }
@@ -55,6 +55,7 @@ body {
     position: absolute;
     right: 0;
     margin: 0.3vh 2.5vh 0 0;
+    z-index: 1;
 }
 
 .buscar > input {
@@ -63,7 +64,8 @@ body {
     border-radius: 1vh;
     border: none;
     padding: 1vh 5vh 1vh 1vh; 
-    box-sizing: border-box; 
+    box-sizing: border-box;
+    z-index: 1;
 }
 
 #intro {
@@ -177,7 +179,6 @@ body {
 }
 
 .gridImage {
-    width: 16vh;
     background-color: #3d3e42;
     display: flex;
     width: 16vh;
@@ -583,7 +584,7 @@ body {
 }
 
 
-@media screen and (min-width: 768px) and (max-width:1023px) {
+@media screen and (min-width: 768px) and (max-width: 1023px){
     .logo {
         width: 10%;
         opacity: 1;
@@ -596,7 +597,7 @@ body {
 
     .op {
         width: 65%;
-        gap: 1vh;
+        gap: 2.5vh;
         margin: 0 auto;
         font-size: 3vh;
     }
@@ -611,10 +612,12 @@ body {
         width: 100%;
         height: 5vh;
         font-size: 3vh;
+        z-index: 1;
     }
 
     .buscar > i {
         font-size: 2.8vh;
+        z-index: 1;
     }
 
     #intro{
@@ -779,7 +782,7 @@ body {
     }
 
     #contact{
-        height: 13rem;
+        height: 15rem;
     }
 
     .hline1{
@@ -809,7 +812,7 @@ body {
 
 }
 
-@media screen and (min-width: 1024px) and (max-width: 1439px){
+@media screen and (min-width: 1024px) and (max-width: 1299px){
     .logo {
         width: 10%;
         opacity: 1;
@@ -822,9 +825,9 @@ body {
 
     .op {
         width: 64%;
-        gap: 1vh;
+        gap: 3vh;
         margin: 0 auto;
-        font-size: 2.5vh;
+        font-size: 3.2vh;
     }
 
     .buscar {
@@ -836,11 +839,14 @@ body {
     .buscar > input {
         width: 100%;
         height: 4vh;
-        font-size: 2vh;
+        font-size: 2.5vh;
+        z-index: 1;
+
     }
 
     .buscar > i {
         font-size: 2vh;
+        z-index: 1;
     }
 
     #intro {
@@ -1027,10 +1033,781 @@ body {
         margin-top: -1.5vh;
         font-size: 2vh;
     }
+
+    .hlineSubject1 > p{
+        font-size: 30px;
+        padding-right: 5vh;
+    }
+
+    .hlineSubject1 > div{
+        margin: 3.15vh 1vh 0 0;
+    }
+
+    .hlineSubject2 > p{
+        font-size: 30px;
+    }
+
+    .hlineSubject2 > div > p{
+        font-size: 28px;
+    }
+
+    .hlineSubject2 > div {
+        margin: -4vh 0 0 0;
+    }
+
+    #contact {
+        height: 20rem;
+    }
+
+    .hline1{
+        width: 30%;
+    }
+
+    .hline2{
+        width: 30%;
+    }
+
+    .hline3{
+        width: 45%;
+    }
+
+    .hline4{
+        width: 45%;
+    }
+
+    .contactFoot{
+        font-size: 2.5vh;
+    }
+
+    .icons > div{
+        width: 30vh;
+        font-size: 2vh;
+    }
+
+    .footer > h1{
+        font-size: 5vh;
+    }
+
+    .testItem{
+        display: flex;
+        flex-direction: row;
+        width: 100%;
+        position: relative;
+    }
+
+    .testHline {
+        width: 60%;
+    }
+
+    .testImg > img {
+        opacity: 1;
+        width: 30vh;
+    }
+
+    .testImg{
+        width: 33%;
+        display: flex;
+        justify-content: end;
+        text-align: center;
+        align-items: center;
+        position: absolute;
+        right: 0;
+        bottom: 0;
+        z-index: 0;
+    }
+
+    .bgImg{
+        background-color: #ffc86b;
+        width: 28vh;
+        height: 29vh;
+        position: absolute;
+        z-index: -1;
+        bottom: 0;
+        border-radius: 3vh 0 0 3vh;
+    }
+}
+
+@media screen and (min-width: 1300px) and (max-width: 1439px){
+    .logo {
+        width: 10%;
+        opacity: 1;
+        padding: 1vh;
+        display: flex;
+        justify-content: center;
+    }
+
+    .logo > img {
+        width: 10vh;
+    }
+
+    .op {
+        width: 82%;
+        gap: 3vh;
+        margin: 0 auto;
+        font-size: 4vh;
+    }
+
+    .buscar {
+        width: 8%;
+        gap: 6px;
+        margin: 0 2vh 0 0;
+    }
+
+    .buscar > input {
+        width: 100%;
+        height: 7vh;
+        font-size: 3vh;
+        z-index: 1;
+    }
+
+    .buscar > i {
+        font-size: 2vh;
+        padding-right: 0.5vh;
+        z-index: 1;
+    }
+
+    #intro {
+        padding: 60vh 0 0 3vh;
+    }
+
+    .introImg > div {
+        margin: 0 2vh 1vh 0;
+    }
+
+    .introImg > img {
+        width: 70vh;
+    }
+
+    .vLine {
+        height: 20vh;
+        border: solid 2px #ffc86b;
+        border-radius: 2vh;
+    }
+
+    .introVline > a{
+        font-size: 5vh;
+    }
+
+    .introText{
+        font-size: 6vh;
+        margin: -50vh 0 0 20vh;
+    }
+    
+    .introText > a{
+        padding: 2vh;
+    }
+
+    .introTitle {
+        margin-bottom: -12vh;
+    }
+
+    #port > h1,
+    #aboutMe > h1,
+    #habs > div > h1,
+    #exp > h1,
+    #test > h1,
+    #contact > div > h1{
+        font-size: 9vh;
+    }
+
+    .abMText {
+        margin: 0 30vh 0 10vh;
+    }
+
+    .abMText > p{
+        font-size: 35px;
+        margin: 0vh 0 0 0;
+    }
+
+    .hLine{
+        margin: 3vh 1vh 0 0;
+    }
+
+    .gridImage {
+        background-color: #3d3e42;
+        display: flex;
+        width: 40vh;
+        height: 40vh;
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+        border-radius: 2vh;
+    }
+    
+    .gridImage:hover{
+        background-color: #ffc86b;
+        transition: all ease 800ms;
+    }
+    
+    .gridImage > a{
+        font-size: 20px;
+        text-decoration: none;
+    }
+    
+    .gridImage > a > img{
+        width: 20vh;
+        height: 20vh;
+    }
+    
+    .gridImage > a > p{
+        font-size: 3vh;
+        height: 20px;
+    }
+    
+    .one{
+        grid-column: 1/4;
+        grid-row: 1;
+    }
+    
+    .two{
+        grid-column: 2/4;
+        grid-row: 1;
+    }
+
+    .three{
+        grid-column: 3/4;
+        grid-row: 1;
+    }
+
+    .four{
+        grid-column: 4/4;
+        grid-row: 1;
+    }
+
+    .portItem{
+        margin-bottom: 0;
+    }
+
+    #skills{
+        gap: 4vh;
+    }
+
+    .dot1{
+        width: 50vh;
+        height: 50vh;
+        margin: -35vh 0 0 0;
+        right: 0;
+    }
+
+    .imgPort{
+        width: 60vh;
+    }
+
+    .portItems{
+        display: flex;
+        gap: 2vh;
+    }
+
+    .btnPort{
+        height: 7vh;
+        width: 19vh;
+        font-size: 25px;
+    }
+
+    #port > a {
+        margin-top: 2vh;
+    }
+
+    .redirect1 h3,
+    .redirect2 h3,
+    .redirect3 h3 {
+        font-size: 2.5vh;
+        margin-bottom: -1.4vh;
+    }
+
+    .redirect1 p,
+    .redirect2 p,
+    .redirect3 p {
+        font-size: 2vh;
+    }
+
+    #exp{
+        height: 10rem;
+    }
+
+    .expText > h3{
+        font-size: 3.4vh;
+    }
+
+    .expText > h5 {
+        font-size: 2.5vh;
+    }
+
+    #exp > h1{
+        margin: -40px 0 0 2vh;
+    }
+
+    .expItem > p{
+        width: 8vh;
+        height: 4vh;
+        font-size: 3vh;
+        margin-top: 16px;
+    }
+
+    .sep{
+        margin: 2vh 0 0 0;
+    }
+
+    .dot{
+        border: solid 12px #ffc86b;
+        margin: 1vh 1vh 0 1vh;
+    }
+
+    .expVLine{
+        border: solid 2px #FFFFFF;
+        width: 0;
+        height: 10vh;
+        border-radius: 2vh;
+        margin: 1vh 0 0 2.6vh;
+    }
+
+    .expText{
+        margin-top: 0vh;
+    }
+    
+    .expText > p{
+        margin-top: -3vh;
+        font-size: 3.2vh;
+    }
+
+    .hlineSubject1 > p{
+        font-size: 30px;
+        padding-right: 5vh;
+    }
+
+    .hlineSubject1 > div{
+        margin: 7.5vh 1vh 0 0;
+    }
+
+    .hlineSubject2 > p{
+        font-size: 30px;
+    }
+
+    .hlineSubject2 > div > p{
+        font-size: 28px;
+    }
+
+    .hlineSubject2 > div {
+        margin: -8vh 0 0 0;
+    }
+
+    .testItem{
+        display: flex;
+        flex-direction: row;
+        width: 100%;
+        position: relative;
+    }
+
+    .testHline {
+        width: 75%;
+    }
+
+    .testImg > img {
+        opacity: 1;
+        width: 50vh;
+    }
+
+    .testImg{
+        width: 33%;
+        display: flex;
+        justify-content: end;
+        text-align: center;
+        align-items: center;
+        position: absolute;
+        right: 0;
+        bottom: 0;
+        z-index: 0;
+    }
+
+    .bgImg{
+        background-color: #ffc86b;
+        width: 50vh;
+        height: 50vh;
+        position: absolute;
+        z-index: -1;
+        bottom: 0;
+        border-radius: 3vh 0 0 3vh;
+    }
+
+    #contact {
+        height: 10rem;
+    }
+
+    .hline1{
+        width: 39%;
+    }
+
+    .hline2{
+        width: 39%;
+    }
+
+    .hline3{
+        width: 47%;
+    }
+
+    .hline4{
+        width: 47%;
+    }
+
+    .compContact > h1{
+        position: relative;
+        margin-top: -35px;
+        width: 22%;
+    }
+
+    .contactFoot{
+        font-size: 5vh;
+        margin-bottom: -3vh;
+    }
+
+    .icons {
+        display: flex;
+        flex-direction: row;
+    }
+
+    .icons > div{
+        width: 40vh;
+        font-size: 3vh;
+    }
+
+    .footer > h1{
+        font-size: 5vh;
+    }
 }
 
 @media screen and (min-width: 1440px) {
+    .logo {
+        width: 10%;
+        opacity: 1;
+        padding: 1vh;
+        justify-content: center;
+        align-items: center;
+        display: flex;
+    }
+
+    .logo > img {
+        width: 10vh;
+    }
+
+    .op {
+        width: 64%;
+        gap: 3vh;
+        margin: 0 auto;
+        font-size: 3.5vh;
+    }
+
+    .buscar {
+        width: 16%;
+        gap: 6px;
+        margin: 0 2vh 0 0;
+    }
+
+    .buscar > input {
+        width: 100%;
+        height: 6vh;
+        font-size: 3vh;
+        z-index: 1;
+    }
+
+    .buscar > i {
+        font-size: 3vh;
+        margin-right: 3.5vh;
+        z-index: 1;
+    }
+
+    #intro {
+        padding: 90vh 0 0 3vh;
+    }
+
+    .introImg > div {
+        margin: 0 2vh 2vh 0;
+    }
+
+    .introImg > img {
+        width: 90vh;
+    }
+
+    .vLine {
+        height: 20vh;
+        border: solid 2px #ffc86b;
+        border-radius: 2vh;
+    }
+
+    .introVline > a{
+        font-size: 3vh;
+    }
+
+    .introText{
+        font-size: 5vh;
+        margin: -60vh 0 0 25vh;
+    }
+
+    .introTitle {
+        margin-bottom: -10vh;
+    }
+
+    .introText > a {
+        border: solid 4px #ffc86b;
+        color: #ffc86b;
+        padding: 1.5vh;
+        text-decoration: none;
+        border-radius: 0.5vh;
+    }
+
+    #port > h1,
+    #aboutMe > h1,
+    #habs > div > h1,
+    #exp > h1,
+    #test > h1,
+    #contact > div > h1{
+        font-size: 6vh;
+    }
     
+    .abMText {
+        margin: 0 40vh 0 20vh;
+    }
+
+    .abMText > p{
+        font-size: 35px;
+        margin: 0vh 0 0 0;
+    }
+
+    .hLine{
+        margin: 1.5vh 1vh 0 0;
+    }
+
+    .gridImage {
+        background-color: #3d3e42;
+        display: flex;
+        width: 40vh;
+        height: 40vh;
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+        border-radius: 2vh;
+    }
+    
+    .gridImage:hover{
+        background-color: #ffc86b;
+        transition: all ease 800ms;
+    }
+    
+    .gridImage > a{
+        font-size: 20px;
+        text-decoration: none;
+    }
+    
+    .gridImage > a > img{
+        width: 20vh;
+        height: 20vh;
+    }
+    
+    .gridImage > a > p{
+        font-size: 3vh;
+        height: 20px;
+    }
+    
+    .one{
+        grid-column: 1/3;
+        grid-row: 1;
+    }
+    
+    .two{
+        grid-column: 2/3;
+        grid-row: 1;
+    }
+
+    .three{
+        grid-column: 3/3;
+        grid-row: 1;
+    }
+
+    .dot1{
+        width: 50vh;
+        height: 60vh;
+        margin: -45vh 0 0 0;
+        right: 0;
+    }
+
+    .imgPort{
+        width: 60vh;
+    }
+
+    .portItems{
+        display: flex;
+        gap: 2vh;
+    }
+
+    .btnPort{
+        height: 5vh;
+        width: 15vh;
+        font-size: 30px;
+    }
+
+    .redirect1 h3,
+    .redirect2 h3,
+    .redirect3 h3 {
+        font-size: 2.5vh;
+        margin-bottom: -1.4vh;
+    }
+
+    .redirect1 p,
+    .redirect2 p,
+    .redirect3 p {
+        font-size: 2vh;
+    }
+
+    #exp{
+        height: 18rem;
+    }
+
+    .expText{
+        margin-top: -2.3vh;
+    }
+
+    .expText > h3{
+        font-size: 3vh;
+    }
+
+    .expText > h5 {
+        font-size: 2vh;
+    }
+
+    #exp > h1{
+        margin: -35px 0 0 2vh;
+    }
+
+    .expItem > p{
+        width: 8vh;
+        height: 4vh;
+        font-size: 3vh;
+    }
+
+    .sep{
+        margin: -1vh 0 0 0;
+    }
+
+    .dot{
+        border: solid 15px #ffc86b;
+        margin: 1vh 1vh 0 1vh;
+    }
+
+    .expVLine{
+        border: solid 2px #FFFFFF;
+        width: 0;
+        height: 8vh;
+        border-radius: 2vh;
+        margin: 0.8vh 0 0 2.4vh;
+    }
+    
+    .expText > p{
+        margin-top: -1.5vh;
+        font-size: 3vh;
+    }
+
+    .hlineSubject1 > p{
+        font-size: 30px;
+        padding-right: 5vh;
+    }
+
+    .hlineSubject1 > div{
+        margin: 5vh 1vh 0 0;
+    }
+
+    .hlineSubject2 > p{
+        font-size: 30px;
+    }
+
+    .hlineSubject2 > div > p{
+        font-size: 28px;
+    }
+
+    .hlineSubject2 > div {
+        margin: -4vh 0 0 0;
+    }
+
+    .testItem{
+        display: flex;
+        flex-direction: row;
+        width: 100%;
+        position: relative;
+    }
+
+    .testHline {
+        width: 75%;
+    }
+
+    .testImg > img {
+        opacity: 1;
+        width: 40vh;
+    }
+
+    .testImg{
+        width: 33%;
+        display: flex;
+        justify-content: end;
+        text-align: center;
+        align-items: center;
+        position: absolute;
+        right: 0;
+        bottom: 0;
+        z-index: 0;
+    }
+
+    .bgImg{
+        background-color: #ffc86b;
+        width: 40vh;
+        height: 40vh;
+        position: absolute;
+        z-index: -1;
+        bottom: 0;
+        border-radius: 3vh 0 0 3vh;
+    }
+
+    #contact {
+        height: 18rem;
+    }
+
+    .hline1{
+        width: 39%;
+    }
+
+    .hline2{
+        width: 39%;
+    }
+
+    .hline3{
+        width: 47%;
+    }
+
+    .hline4{
+        width: 47%;
+    }
+
+    .compContact > h1{
+        position: relative;
+        margin-top: -35px;
+        width: 22%;
+    }
+
+    .contactFoot{
+        font-size: 5vh;
+        margin-bottom: -3vh;
+    }
+
+    .icons {
+        display: flex;
+        flex-direction: row;
+    }
+
+    .icons > div{
+        width: 40vh;
+        font-size: 3vh;
+    }
+
+    .footer > h1{
+        font-size: 5vh;
+    }
 }
 
 
